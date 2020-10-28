@@ -22,10 +22,10 @@ public class Fsa {
 	@Id
 	private String code;
 
-	@Column(name = "latitude")
+	@Column(name = "latitude", columnDefinition = "decimal(65,30)")
 	private BigDecimal latitude;
 
-	@Column(name = "longitude")
+	@Column(name = "longitude", columnDefinition = "decimal(65,30)")
 	private BigDecimal longitude;
 
 	public String getCode() {
